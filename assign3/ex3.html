@@ -1,0 +1,184 @@
+<html>
+
+<head>
+
+<script src="formea.js"
+	type="text/javascript">
+
+</script>
+
+<style type="text/css">
+table{
+	width:100%
+
+     }
+</style>
+
+</head>
+
+<body>
+
+<form>
+<table border="1">
+<caption>COMPLAINT REGISTRATION FORM</caption>
+
+<tr>
+<td colspan="2">
+<label>District*:
+ <select id="s1" autofocus  required>
+	<option disabled selected value="">--select a district--</option>
+	<option value="ariyalur">Ariyalur</option>
+  	<option value="chennai">Chennai</option>
+ 	<option value="kovai">Coimbatore</option>
+	<option value="kanchi">Kancheepuram</option>
+    <option value="salem">Salem</option>
+   	<option value="tanjore">Tanjore</option>
+ </select>
+</label>
+</td>
+</tr>
+
+<tr>
+<th> Details Of Complainant</th>
+<th> Details Of Complaint</th>
+</tr>
+
+<tr>
+<td>
+	<label>Name*:
+		<input  id="nameid"
+			type="text" 
+			placeholder="Complainant Name"
+			onblur="checkName(id)"
+			> 
+	</label>
+</td>
+<td rowspan="2">
+   <label>Subject*:
+     <select id="s2"  required>
+	<option disabled selected value="">--select a subject--</option>
+	<option value="road">Roads</option>
+  	<option value="tax">Taxes</option>
+ 	<option value="current">Electricity</option>
+     </select>
+   </label>
+</td>
+</tr>
+
+<tr>
+<td>
+	<label>Gender
+		<br>
+		<input  id="i2"
+			type="radio" 
+			name="Gender"
+			value="male"
+			checked
+			onchange="checkGender(id)" 
+			> Male
+		<br>
+		<input  id="i3"
+			type="radio" 
+			name="Gender"
+			value="female"
+			onchange="checkGender(id)" 
+			> Female
+		<br>
+		<input  id="i4"
+			type="radio" 
+			name="Gender"
+			value="other"
+			onchange="checkGender(id)" 
+			> Other
+	</label>
+</td>
+</tr>
+
+<tr>
+<td> 
+	<label>Date Of Birth*:
+ 		<input id="idate" type="text"  placeholder="DD-MM-YYYY" onchange="checkDob(id)" required >
+	</label>
+</td>
+<td>
+
+	<label>Date Of Occurence:
+		<input id ="i5" type="text"  placeholder="DD-MM-YYYY" onchange="checkDob(id)" required >
+	</label>
+</td>
+</tr>
+
+<tr>
+<td rowspan="2">
+	<label>Address
+		<textarea  id="addid"
+			name="Address"
+			placeholder="Complainant Address"
+			onblur="checkAdd(id)"
+			></textarea>
+	</label>
+</td>
+<td rowspan="2">
+	<label>Place Of Occurence:
+	<textarea cols="45" name="address" placeholder="Place Of Occurence( max 200  characters)"></textarea>
+	</label>
+</td>
+</tr>
+
+<tr>
+</tr>
+
+<tr>
+<td>
+	<label>Mobile Number
+		<input  id="mobid"
+			type="text" 
+			placeholder="Complainant Mob No"
+			onblur="checkNo(id)"
+			> 
+	</label>
+</td>
+<td rowspan="2">
+	<label>Description:
+ 	<textarea rows="4"  cols="50" name="address" placeholder="Complaint Description( max 2000  characters)"></textarea>
+	</label>
+</td>
+</tr>
+
+<tr>
+<td>
+	<label>Email ID:
+ 	<input type="text" id="emailid" placeholder="Email ID" onblur="checkEmail(id)">
+	</label>
+</td>
+</tr>
+
+<tr>
+<td colspan="2">
+<label>Education:<br>
+<label><input type="checkbox" value="B.E" id="c1" >B.Tech.</label><br>
+<label><input type="checkbox" value="M.E" id="c2" >M.Tech.</label><br>
+<label><input type="checkbox" value="P.hd" id="c3" >P.hd.</label><br>
+</td>
+</tr>
+
+<tr >
+  <td colspan="2">
+	<label>Want to attach documents[max 500KB (PDF,PNG,JPEG files allowed)] 
+   <input type="radio" name="r2" value="yes" >Yes
+   <input type="radio" name="r2" value="no" >No
+   <input type="file">
+	</label>
+</td>
+</tr> 
+
+<tr>
+<td colspan="2" style="text-align:center">
+<input type="submit" onclick="display()" value="SUBMIT">
+</td>
+</tr>
+</table>
+
+</form>
+</body>
+</html>

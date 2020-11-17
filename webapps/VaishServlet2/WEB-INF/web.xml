@@ -1,0 +1,12 @@
+<web-app>
+	<servlet>
+	<servlet-name>VaishServlet2</servlet-name>
+	<servlet-class>ipdb</servlet-class>
+	</servlet>
+<servlet-mapping>
+	<servlet-name>VaishServlet2</servlet-name>
+	<url-pattern>/Welcome</url-pattern>
+</servlet-mapping>
+ 
+</web-app>
+

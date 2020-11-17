@@ -1,0 +1,66 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function isValid(input,field)
+{
+window.alert("passed val: "+field+"end");
+var v1 = new RegExp("^[a-zA-Z]*$");
+if(!v1.test(input))
+    window.alert(input+" is not a valid "+field);
+}
+
+function isFilled()
+{
+  var field;
+  var x= document.getElementById("i1");
+  var input =x.value;
+  if(input==="")
+  {
+    field=x.getAttribute("name");
+    window.alert(field+" is a required field");
+  }
+  else
+   {  isValid(input,field);  }
+}
+
+</script>
+</head>
+
+<body>
+<form>
+	<label>Name
+		<input  id="i1"
+			type="text" 
+			name="Name"
+			placeholder="Complainant Name"
+			required
+			autofocus
+			onBlur="isFilled()"
+			> 
+	</label>
+<br>
+	<label>Gender
+		<br>
+		<input  id="i2"
+			type="radio" 
+			name="Gender"
+			value="male"
+			checked
+			> Male
+		<br>
+		<input  id="i3"
+			type="radio" 
+			name="Gender"
+			value="female"
+			> Female
+		<br>
+		<input  id="i3"
+			type="radio" 
+			name="Gender"
+			value="other"
+			> Other
+	</label>
+</form>
+</body>
+</html>

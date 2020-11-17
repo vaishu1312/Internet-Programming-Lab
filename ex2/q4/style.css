@@ -1,0 +1,33 @@
+*{font-size: 14pt;}
+
+a:link {color:red}
+a:visited {color:violet}
+a:hover {color:blue}
+a:active {color:yellow}
+
+ol li {
+	font-style: italic;
+	font-size: 20pt;
+}
+
+ul li{
+	font-family: cursive;
+	font-size: 20pt;
+	list-style-type:disc;
+}
+
+#d6 {   height:100px;
+	width:100px;
+	position:fixed;
+	bottom:2pt;
+	right:10pt;
+   }
+
+   #bottom { height:100%;
+      max-width:100%;   
+ }
+
+ #emp{
+ 	font-weight: bold;
+ 	color:pink;
+ }
