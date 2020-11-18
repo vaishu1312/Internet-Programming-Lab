@@ -1,0 +1,65 @@
+<html>
+<body>
+
+<form method="GET" action="generate">
+<fieldset> <legend>Marklist Generation </legend>
+Enter Roll No
+<input type="text" name="t1">
+<br><br>
+<input type="submit" value="Generate Marklist">
+</fieldset>
+</form>
+<br>
+
+<form method="GET" action="insert">
+<fieldset> <legend>Create Operation </legend>
+<input type="radio" name="table_name" value="student">Student
+<input type="radio" name="table_name" value="marks">Marks
+<br>
+Enter Roll No <input type="text" name="t2"><br><br>
+Enter Name <input type="text" name="t0"><br><br>
+Enter Marks in CS8601 <input type="text" name="t3"><br><br>
+Enter Marks in CS8602 <input type="text" name="t4"><br><br>
+Enter Marks in CS8603 <input type="text" name="t5"><br><br>
+Enter Marks in CS8651 <input type="text" name="t6"><br><br>
+Enter Marks in CS8691 <input type="text" name="t7"><br><br>
+Enter Marks in CS8075 <input type="text" name="t8"><br><br>
+<input type="submit" value="Insert record">
+</fieldset>
+</form>
+<br>
+
+<form method="GET" action="delete">
+<fieldset> <legend>Remove operation</legend>
+Enter Roll No <input type="text" name="t8">
+<input type="submit" value="Delete record">
+</fieldset>
+</form>
+<br><br>
+
+<form method="GET" action="update">
+<fieldset> <legend>Update operation</legend>
+<input type="radio" name="tbl_name" value="student">Student
+<input type="radio" name="tbl_name" value="marks">Marks
+<br>
+Enter Roll No <input type="text" name="t9"><br><br>
+Enter Name <input type="text" name="t10"><br><br>
+Enter Marks in CS8601 <input type="text" name="t11"><br><br>
+Enter Marks in CS8602 <input type="text" name="t12"><br><br>
+Enter Marks in CS8603 <input type="text" name="t13"><br><br>
+Enter Marks in CS8651 <input type="text" name="t14"><br><br>
+Enter Marks in CS8691 <input type="text" name="t15"><br><br>
+Enter Marks in CS8075 <input type="text" name="t16"><br><br>
+<input type="submit" value="Update Record">
+</fieldset>
+</form>
+<br><br>
+
+<form method="GET" action="list">
+<fieldset> <legend>Display operation</legend>
+<input type="submit" value="View Database">
+</fieldset>
+</form>
+
+</body>
+</html>

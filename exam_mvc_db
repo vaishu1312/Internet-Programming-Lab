@@ -1,0 +1,18 @@
+create table student ( sid int, name varchar(50), email varchar(50),score int);
+
+insert into student (sid,name,email) values(1,'vaishali','v@gmail.com');
+insert into student (sid,name,email) values(2,'Mounika','M@gmail.com');
+insert into student (sid,name,email) values(3,'Uma','U@gmail.com');
+insert into student (sid,name,email) values(4,'varshini','va@gmail.com');
+insert into student (sid,name,email) values(5,'Sivani','S@gmail.com');
+
+ select * from student;
+
+
+create table questions(qid int,qn varchar(100),opA varchar(20),opB varchar(20),opC varchar(20),opD varchar(20),ans varchar(20));
+
+insert into questions(1,'capital of india','delhi','lucknow','chennai','andhra','delhi');
+insert into questions(2,'capital of pakistan','lahore','islamabad','karachi','hyderabad','islamabad');
+insert into questions(3,'capital of china','beijing','wuhan','hongkong','shangai','beijing');
+insert into questions(4,'capital of usa','texas','newyork','washington','arizona','washington');
+

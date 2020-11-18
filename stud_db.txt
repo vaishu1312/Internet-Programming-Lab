@@ -1,0 +1,43 @@
+create table student ( reg_no varchar(12), name varchar(10));
+
+insert into student values ('312217104181','Vaishali');
+insert into student values ('312217104702','Mounika');
+insert into student values ('312217104180','Uma');
+insert into student values ('312217104160','Sneha');
+insert into student values ('312217104156','Shivani');
+
+create table marks ( reg_no varchar(12), sub1 int ,sub2 int, sub3 int, sub4 int, sub5 int, sub6 int);
+
+insert into marks values ('312217104181', 80,85,90,95,100,75 );
+insert into marks values ('312217104702', 75,85,95,100,70,65 );
+insert into marks values ('312217104180', 82,61,79,93,50,88 );
+insert into marks values ('312217104160', 70,79,70,20,80,90 );
+insert into marks values ('312217104156', 71,88,52,92,70,64 );
+
+
+create table mapping ( code varchar(6), sub varchar(40));
+
+insert into mapping values ('CS8601', 'Mobile Computing');
+insert into mapping values ('CS8602', 'Compiler Design');
+insert into mapping values ('CS8603', 'Distributed Systems');
+insert into mapping values ('CS8651', 'Internet Programming');
+insert into mapping values ('CS8691', 'Artificial Intelligence');
+insert into mapping values ('CS8075', 'DWDM');
+
+select * from student;
+select * from marks;
+select * from mapping;
+
+PreparedStatement ps4 = con.prepareStatement("SELECT * FROM mapping");
+ResultSet rs2 = ps4.executeQuery();
+
+pw.println("<h2>Course Details after insertion</h2><br>");
+pw.println("<table border='5px' cellspacing='2px' cellpadding='1px'>");
+pw.println("<tr><th>Subject Code</th><th>Subject Name</th></tr>");
+while (rs2.next())
+{
+c=rs2.getString("code");
+s=rs2.getString("sub");
+pw.println("<tr><td>"+c+"</td><td>"+s+"</td></tr>");
+}
+pw.println("</table>");

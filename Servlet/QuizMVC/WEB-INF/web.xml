@@ -1,0 +1,24 @@
+<web-app>
+
+<servlet>
+    <servlet-name>loginservlet</servlet-name>
+    <servlet-class>examcontroller</servlet-class> 
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/examcontrol</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>anwservlet</servlet-name>
+    <servlet-class>anscontroller</servlet-class> 
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>anwservlet</servlet-name>
+    <url-pattern>/anscontrol</url-pattern>
+</servlet-mapping>
+
+</web-app>
+
