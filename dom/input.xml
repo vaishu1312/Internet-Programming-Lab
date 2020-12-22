@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+	<student rno="1">		
+		<name>Snneha</name>	
+		<address>Third road</address>
+		<mob>9884006632</mob>
+	</student>
+
+	<student rno="2">
+		<rollno>2</rollno>
+		<name>Vaish</name>	
+		<address>Second road</address>
+		<mob>91761906832</mob>
+	</student>
+
+	<student rno="3">		
+		<name>jack</name>	
+		<address>first road</address>
+		<mob>8764423632</mob>
+	</student>
+
+	<student rno="4">		
+		<name>jill</name>	
+		<address>fourth road</address>
+		<mob>7338766632</mob>
+	</student>
+
+	<student rno="5">		
+		<name>humpty</name>	
+		<address>fifth road</address>
+		<mob>678889632</mob>
+	</student>
+</class>
+
+		
+
